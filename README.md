@@ -29,8 +29,7 @@ The raw CSV (`FraudTrain.csv`) was imported into **Pandas** for cleaning and pre
 - **Feature Engineering in Python**:
   - `distance_customer_merchant`: calculated using the **Haversine formula** from customer & merchant latitude/longitude.  
     - ✅ Done in Python due to computational complexity of geospatial math.
-
-
+ ![image alt]()
 
 ---
 
