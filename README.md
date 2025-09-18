@@ -34,3 +34,27 @@ The raw CSV (`FraudTrain.csv`) was imported into **Pandas** for cleaning and pre
 
 ## 🔹 Database Integration (SQL Server)
 The processed dataset (with distance already computed in Python) was pushed into **SQL Server** for further transformations and analysis.  
+
+**Table Creation with appropriate datatypes (VARCHAR for trans_num, FLOAT for lat/long, INT for age, etc.).**
+
+**Feature Engineering in SQL:**
+
+age: computed from dob and transaction date.
+
+hour_of_day: extracted from transaction timestamp.
+
+day_of_week: derived from transaction timestamp.
+
+time_category: grouped into Morning, Afternoon, Night.
+
+**Views (vw_FraudData)** were created with only business-relevant columns.
+
+
+
+**Why Views?**
+
+Hide sensitive data (cc_num, trans_num).
+
+Improve Power BI performance (lighter dataset).
+
+Keep dashboards focused on business KPIs.
