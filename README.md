@@ -30,7 +30,7 @@ The raw CSV (`FraudTrain.csv`) was imported into **Pandas** for cleaning and pre
   - `distance_customer_merchant`: calculated using the **Haversine formula** from customer & merchant latitude/longitude.  
     - Done in Python due to computational complexity of geospatial math.
    
- ![image alt](image)
+ ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/fa77b42ba39e813b89465c48c89068230ba46c45/read%20csv%20file.jpg)
   
  ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/ed95795b83c2d4b46341d338cbbe5eeab3738d38/Haverson%20_%20distance%20calc.jpg)
 
