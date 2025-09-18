@@ -28,8 +28,9 @@ The raw CSV (`FraudTrain.csv`) was imported into **Pandas** for cleaning and pre
 - Removed irrelevant columns (e.g., unamed, first, last, street).  
 - **Feature Engineering in Python**:
   - `distance_customer_merchant`: calculated using the **Haversine formula** from customer & merchant latitude/longitude.  
-    - ✅ Done in Python due to computational complexity of geospatial math.
- ![image alt](Haverson _ distance calc.png)
+    - Done in Python due to computational complexity of geospatial math.
+  
+ ![image alt]([Haverson _ distance calc.png](https://github.com/Danyrex/fraud-detection-analytics/blob/main/Haverson%20_%20distance%20calc.png?raw=true))
 
 ---
 
