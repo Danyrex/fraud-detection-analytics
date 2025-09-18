@@ -1,4 +1,4 @@
-# Fraud detection analytics
+# Fraud Detection Analysis
 End-to-end fraud detection analytics project using Python, SQL Server, and Power BI
 
 ## 📌 Executive Summary
