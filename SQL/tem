@@ -1,6 +1,6 @@
-# Table Creation with appropriate datatypes (VARCHAR for trans_num, FLOAT for lat/long, INT for age, etc.).
+#Table Creation with appropriate datatypes (VARCHAR for trans_num, FLOAT for lat/long, INT for age, etc.).
 
-# Feature Engineering in SQL:
+#Feature Engineering in SQL:
 
 age: computed from dob and transaction date.
 
@@ -14,7 +14,7 @@ time_category: grouped into Morning, Afternoon, Night.
 
 
 
-# Why Views?
+#Why Views?
 
 Hide sensitive data (cc_num, trans_num).
 
