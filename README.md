@@ -37,26 +37,72 @@ The raw CSV (`FraudTrain.csv`) was imported into **Pandas** for cleaning and pre
 ## 🔹 Database Integration (SQL Server)
 The processed dataset (with distance already computed in Python) was pushed into **SQL Server** for further transformations and analysis.  
 
-**Table Creation with appropriate datatypes (VARCHAR for trans_num, FLOAT for lat/long, INT for age, etc.).**
+**Table Creation** with appropriate datatypes:
+- `VARCHAR` → transaction number.  
+- `FLOAT` → latitude/longitude, amount, distance.  
+- `INT` → age.  
+- `DATETIME` → transaction timestamp.  
 
-**Feature Engineering in SQL:**
+**Feature Engineering in SQL**:
+- `age`: computed from `dob` and transaction date.  
+- `hour_of_day`: extracted from transaction timestamp.  
+- `day_of_week`: derived from transaction timestamp.  
+- `time_category`: grouped into **Morning, Afternoon, Night**.  
+- `fraud_label`: marked as **Fraud** or **Legit**.  
 
-age: computed from dob and transaction date.
-
-hour_of_day: extracted from transaction timestamp.
-
-day_of_week: derived from transaction timestamp.
-
-time_category: grouped into Morning, Afternoon, Night.
-
-**Views (vw_FraudData)** were created with only business-relevant columns.
-
-
+**Views (`vw_FraudData`)** created with only business-relevant columns.
 
 **Why Views?**
+- Hide sensitive data (`cc_num`, `trans_num`).  
+- Improve Power BI performance (lighter dataset).  
+- Keep dashboards focused on business KPIs.  
 
-Hide sensitive data (cc_num, trans_num).
+📸 *Insert screenshot of SQL schema / view creation*  
 
-Improve Power BI performance (lighter dataset).
+---
 
-Keep dashboards focused on business KPIs.
+## 📊 Visualization (Power BI)
+
+The cleaned dataset was connected from SQL Server views into **Power BI**.  
+I designed multiple dashboard pages for different perspectives:
+
+1. **Overview Dashboard**
+   - Fraud rate (**0.58%**)  
+   - Fraud loss (**$3.99M**)  
+   - Total transaction volume (**$91.22M**)  
+   - Fraud loss rate (**4.38% of value**)  
+
+   📸 *Insert screenshot of Overview dashboard*  
+
+2. **Customer Insights**
+   - Fraud by **age group**  
+   - Fraud by **job type**  
+   - Fraud by **gender**  
+
+   📸 *Insert screenshot of Customer Insights dashboard*  
+
+3. **Time Insights**
+   - Fraud by **hour of day**  
+   - Fraud by **day of week**  
+   - Fraud by **time category** (Morning, Afternoon, Night)  
+
+   📸 *Insert screenshot of Time Insights dashboard*  
+
+4. **Distance Insights**
+   - Fraud % by **customer–merchant distance** bins (0–50km, 50–200km, >200km, etc.)  
+   - Geo-map of fraud hotspots  
+
+   📸 *Insert screenshot of Distance Insights dashboard*  
+
+---
+
+## 🔍 Key Findings
+- Fraud rate is **low (0.58%)** but financial loss is **high ($3.99M)**.  
+- **Night transactions** show higher fraud likelihood.  
+- Fraud is more common when **customer and merchant are far apart**.  
+- Younger customers (<30) show higher exposure.  
+- Certain **merchant categories** are fraud hotspots.  
+
+---
+
+## 📂 Project Structure
