@@ -57,7 +57,7 @@ The processed dataset (with distance already computed in Python) was pushed into
 - Improve Power BI performance (lighter dataset).  
 - Keep dashboards focused on business KPIs.  
 
-📸 *Insert screenshot of SQL schema / view creation*  
+ ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Views.jpg)
 
 ---
 
@@ -72,27 +72,28 @@ I designed multiple dashboard pages for different perspectives:
    - Total transaction volume (**$91.22M**)  
    - Fraud loss rate (**4.38% of value**)  
 
-   📸 *Insert screenshot of Overview dashboard*  
+ ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Overview%20dashboard.jpg)
 
 2. **Customer Insights**
    - Fraud by **age group**  
    - Fraud by **job type**  
    - Fraud by **gender**  
 
-   📸 *Insert screenshot of Customer Insights dashboard*  
+  ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Customer%20insight.jpg
+)
 
 3. **Time Insights**
    - Fraud by **hour of day**  
    - Fraud by **day of week**  
    - Fraud by **time category** (Morning, Afternoon, Night)  
 
-   📸 *Insert screenshot of Time Insights dashboard*  
+   ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Time%20insight.jpg)
 
 4. **Distance Insights**
    - Fraud % by **customer–merchant distance** bins (0–50km, 50–200km, >200km, etc.)  
    - Geo-map of fraud hotspots  
 
-   📸 *Insert screenshot of Distance Insights dashboard*  
+   ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Distance.jpg)
 
 ---
 
@@ -104,5 +105,3 @@ I designed multiple dashboard pages for different perspectives:
 - Certain **merchant categories** are fraud hotspots.  
 
 ---
-
-## 📂 Project Structure
