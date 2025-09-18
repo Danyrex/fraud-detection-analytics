@@ -101,7 +101,6 @@ I designed multiple dashboard pages for different perspectives:
 - Fraud rate is **low (0.58%)** but financial loss is **high ($3.99M)**.  
 - **Night transactions** show higher fraud likelihood.  
 - Fraud is more common when **customer and merchant are far apart**.  
-- Younger customers (<30) show higher exposure.  
-- Certain **merchant categories** are fraud hotspots.  
+- Older customers (>50) show higher exposure, also customer below the age of 20.
 
 ---
