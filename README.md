@@ -90,8 +90,7 @@ I designed multiple dashboard pages for different perspectives:
    ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Time%20insight.jpg)
 
 4. **Distance Insights**
-   - Fraud % by **customer–merchant distance** bins (0–50km, 50–200km, >200km, etc.)  
-   - Geo-map of fraud hotspots  
+   - Fraud % by **customer–merchant distance** bins (0–50km, 50–200km, >200km)   
 
    ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Distance.jpg)
 
