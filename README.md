@@ -70,8 +70,10 @@ I designed multiple dashboard pages for different perspectives:
 
 1. **Overview Dashboard**
    - Fraud rate (**0.58%**)  
-   - Fraud loss (**$3.99M**)  
-   - Total transaction volume (**$91.22M**)  
+   - Fraud loss (**$3.99M**)
+   - Total transactions (**1.29M**)
+   - Total Fraudulent transaction (**7,506**)
+   - Total transaction value (**$91.22M**)
    - Fraud loss rate (**4.37% of value**)  
 
  ![image alt](https://github.com/Danyrex/fraud-detection-analytics/blob/886f2c4c379bb5878534bb76d5f15704214b080a/Overview%20dashboard.jpg)
